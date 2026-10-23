@@ -4,19 +4,19 @@ import hashlib
 import zipfile
 
 root = Path(__file__).resolve().parent.parent
-output = root / 'artifacts' / 'bmpr-editor-0.1.0.zip'
+output = root / 'artifacts' / 'telario-0.1.0.zip'
 output.parent.mkdir(exist_ok=True)
 top_level = [
     'package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts',
     'playwright.config.ts', 'index.html', 'Dockerfile', 'compose.yaml',
-    'nginx.conf', '.dockerignore', '.gitignore', '.prettierrc.json',
+    'nginx.conf', '.dockerignore', '.gitignore', '.gitattributes', '.prettierrc.json',
     'README.md', 'VALIDAZIONE.md', 'CLAUDE.md', 'PIANO_editor_bmpr.md',
     'NOTE_bmpr_cantiere_personale.md',
 ]
 paths = [root / name for name in top_level]
-for directory in ['src', 'tests', 'scripts', 'docs', 'public']:
+for directory in ['src', 'tests', 'scripts', 'docs', 'public', 'assets']:
     for path in (root / directory).rglob('*'):
-        if path.is_file() and path.suffix in {'.ts', '.tsx', '.css', '.py', '.mjs', '.md', '.png', '.txt'}:
+        if path.is_file() and path.suffix in {'.ts', '.tsx', '.css', '.py', '.mjs', '.md', '.png', '.txt', '.svg', '.ico', '.webmanifest', '.json', '.html', '.pdf', '.webp', '.jpg', '.tiff', '.zip'}:
             if 'generated' not in path.parts and '__pycache__' not in path.parts:
                 paths.append(path)
 with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as archive:

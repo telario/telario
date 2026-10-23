@@ -1,7 +1,7 @@
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
 
 const packages = ['react', 'react-dom', 'scheduler', 'sql.js', 'roughjs', 'hachure-fill', 'path-data-parser', 'points-on-curve', 'points-on-path'];
-const notices = ['Third-party libraries bundled with bmpr-editor.\nThe application itself has no assigned distribution license yet.\n'];
+const notices = ['Third-party libraries bundled with telario.\nThe application itself has no assigned distribution license yet.\n'];
 for (const name of packages) {
   const directory = `node_modules/${name}`;
   const manifest = JSON.parse(await readFile(`${directory}/package.json`, 'utf8'));

@@ -88,16 +88,14 @@ test('pointer movement, resizing, text editing, keyboard and sketch', async ({ p
   await page.mouse.down();
   await page.mouse.move(box!.x + box!.width / 2 + 60, box!.y + box!.height / 2 + 30, { steps: 5 });
   await page.mouse.up();
-  expect(Number(await page.getByLabel('X', { exact: true }).inputValue())).toBeGreaterThan(
-    Number(before),
-  );
+  await expect.poll(async () => Number(await page.getByLabel('X', { exact: true }).inputValue())).toBeGreaterThan(Number(before));
   const width = Number(await page.getByLabel('Larghezza').inputValue());
   const handle = await page.locator('[data-handle="se"]').boundingBox();
   await page.mouse.move(handle!.x + handle!.width / 2, handle!.y + handle!.height / 2);
   await page.mouse.down();
   await page.mouse.move(handle!.x + 50, handle!.y + 30, { steps: 4 });
   await page.mouse.up();
-  expect(Number(await page.getByLabel('Larghezza').inputValue())).toBeGreaterThan(width);
+  await expect.poll(async () => Number(await page.getByLabel('Larghezza').inputValue())).toBeGreaterThan(width);
   await control.dblclick();
   await page.getByLabel('Modifica testo elemento').fill('Test doppio clic');
   await page.getByRole('button', { name: 'Applica testo' }).click();

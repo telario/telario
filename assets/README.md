@@ -1,10 +1,11 @@
-# Assets
+# Telario — assets
 
-Le quattro proposte di identità per bmpr-editor sono in [logos/index.html](logos/index.html).
+Identità scelta: **Wireframe**, petrolio e arancio.
 
-- [Tavola di anteprima](logos/preview.png)
+- [Galleria](logos/index.html)
+- [Anteprima](logos/preview.png)
 - [Catalogo PDF](logos/catalogo.pdf)
 - [Guida ai formati](logos/README.md)
-- [Pacchetto completo](bmpr-editor-logo-kit.zip)
+- [Kit completo](telario-logo-kit.zip)
 
-La scelta della proposta è ancora aperta; il logo dell'app non è stato sostituito.
+Le proposte iniziali sono conservate in `archive/`; il logo Telario è applicato all'app e alle favicon.

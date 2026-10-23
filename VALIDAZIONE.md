@@ -34,6 +34,10 @@ I PNG dei campioni 1, 14 e soprattutto 25 presentano differenze di contenuto ris
 - Riapertura in Balsamiq dei file salvati, comprese nuove pagine e file creati da zero.
 - Confronto esaustivo dell'intera raccolta e delle revisioni esatte dei PNG.
 - Tutti i controlli avanzati e tutte le versioni del formato.
-- Pubblicazione, nome definitivo e licenza.
+- Pubblicazione e licenza. Nome definitivo scelto: Telario.
 
 Il salvataggio rimane quindi sperimentale. La procedura per completare la verifica sulla macchina di supporto è nel README.
+
+## Migrazione Telario
+
+Progetto e cronologia trasferiti nel repository telario/telario-. Applicati nome Telario e logo Wireframe a interfaccia, favicon e kit assets. Nel nuovo clone: build, 28 test sintetici e 4 test browser superati. Verificati 10 master del logo per dimensioni e trasparenza; 10 PDF senza immagini raster incorporate. Le prove Docker e Balsamiq restano da eseguire. Il test di trascinamento attende ora l'aggiornamento della posizione prima dell'asserzione.

@@ -1,6 +1,6 @@
-# bmpr-editor
+# Telario
 
-Proposte di logo e kit web/stampa: [galleria locale](assets/logos/index.html), [anteprima](assets/logos/preview.png), [guida ai formati](assets/logos/README.md). I quattro concept sono ancora da scegliere.
+Identità Telario e kit web/stampa: [galleria locale](assets/logos/index.html), [anteprima](assets/logos/preview.png), [guida ai formati](assets/logos/README.md). Logo scelto: Wireframe, petrolio e arancio. Le proposte precedenti sono archiviate in `assets/archive/`.
 
 Editor web locale per file `.bmpr`: apre progetti SQLite, visualizza le pagine, modifica i wireframe ed esporta i risultati. React + TypeScript, Vite, sql.js/WebAssembly, SVG e rough.js. Docker serve l'app con Nginx; i documenti vengono elaborati esclusivamente nel browser.
 
@@ -14,7 +14,7 @@ Risultati e limiti delle prove eseguite: [VALIDAZIONE.md](VALIDAZIONE.md).
 
 Occorrono Docker Engine / Docker Desktop e Docker Compose v2. Copiare il repository, incluso `package-lock.json`, oppure clonarlo quando sarà pubblicato. Non servono Node o Python sulla macchina di destinazione.
 
-È disponibile anche `artifacts/bmpr-editor-0.1.0.zip`: estrarlo in una cartella sulla macchina di supporto ed eseguire il comando seguente da quella cartella. Il pacchetto include sorgenti, configurazione e istruzioni, senza dipendenze installate o mockup privati. Per rigenerarlo: `python scripts/package-release.py`.
+È disponibile anche `artifacts/telario-0.1.0.zip`: estrarlo in una cartella sulla macchina di supporto ed eseguire il comando seguente da quella cartella. Il pacchetto include sorgenti, configurazione e istruzioni, senza dipendenze installate o mockup privati. Per rigenerarlo: `python scripts/package-release.py`.
 
 ```sh
 docker compose up --build -d
@@ -130,6 +130,6 @@ tests/         test sintetici, test browser, verifica privata opzionale
 scripts/       generazione esempi e analisi strutturale in sola lettura
 ```
 
-Il progetto è indipendente e non affiliato a Balsamiq. Nome definitivo e licenza del progetto restano da decidere; non è stata attribuita una licenza senza una scelta del proprietario. Prima di pubblicare, verificare i termini applicabili e rimuovere eventuali riferimenti ai clienti dai documenti storici. Nessun mockup privato deve entrare nel repository o nell'immagine Docker. Le icone dell'interfaccia sono disegnate con geometrie originali; il progetto non include risorse grafiche o font proprietari di Balsamiq.
+Il progetto è indipendente e non affiliato a Balsamiq. Il nome definitivo è Telario; la licenza del progetto resta da decidere; non è stata attribuita una licenza senza una scelta del proprietario. Prima di pubblicare, verificare i termini applicabili e rimuovere eventuali riferimenti ai clienti dai documenti storici. Nessun mockup privato deve entrare nel repository o nell'immagine Docker. Le icone dell'interfaccia sono disegnate con geometrie originali; il progetto non include risorse grafiche o font proprietari di Balsamiq.
 
 Le licenze delle librerie distribuite sono raccolte in `public/third-party-notices.txt`, incluso nella build. Dopo un aggiornamento delle dipendenze, rigenerarlo con `node scripts/generate-notices.mjs`.

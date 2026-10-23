@@ -1229,3 +1229,5 @@ kbd {
     max-width: 50%;
   }
 }
+
+.brand-logo { display: block; flex: 0 0 38px; width: 38px; height: 38px; }

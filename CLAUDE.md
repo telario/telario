@@ -1,4 +1,4 @@
-# bmpr-editor — contesto del progetto
+# telario — contesto del progetto
 
 Progetto personale di Antonio, anche per il portfolio. Nato il 22/10/2026 da un lavoro per un cliente, in cui un file Balsamiq `.bmpr` è stato letto senza avere Balsamiq.
 
@@ -16,7 +16,7 @@ Un'app web gratuita che apre i file `.bmpr` **nel browser, senza server**, li mo
 - L'utente ha autorizzato l'implementazione completa nel repository e il confezionamento Docker. Docker non è installato qui: avvio del container e riapertura delle copie in Balsamiq da provare sulla macchina di supporto.
 - Il salvataggio è accessibile soltanto come download sperimentale con attivazione esplicita nell'interfaccia. Non presentare la compatibilità Balsamiq come verificata.
 - Demo e fixture distribuite sono sintetiche. L'utente ha indicato la raccolta Dropbox come fonte di esempi: autorizzate analisi e prove locali in sola lettura, senza inserire file, testi o screenshot privati nel repository.
-- Nome cartella: `bmpr-editor`, scelto da Antonio. Il nome dell'app è ancora da decidere.
+- Nome definitivo: **Telario**, scelto da Antonio. Repository `https://github.com/telario/telario-`, clone locale `telario-`. Logo scelto: Wireframe (seconda proposta), petrolio e arancio.
 - Confronto visivo locale eseguito su 13 pagine della raccolta, con correzioni al renderer; manifest e immagini private soltanto nella cartella temporanea esterna. Vedere `VALIDAZIONE.md` per campioni, riferimenti obsoleti e limiti. Non confondere i 456 abbinamenti candidati con verifiche completate.
 - Ancora da decidere: licenza e pubblicazione. L'app è stata preparata per Docker locale; non è stata pubblicata.
 

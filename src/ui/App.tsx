@@ -322,12 +322,8 @@ export function App() {
       />
       <header className="topbar">
         <div className="brand">
-          <span className="brand-mark">
-            b<span>↗</span>
-          </span>
-          <strong>
-            bmpr<span>-editor</span>
-          </strong>
+          <img className="brand-logo" src="/brand/mark.svg" width="38" height="38" alt="" />
+          <strong>Telario</strong>
           <span className="version-tag">LOCAL</span>
         </div>
         {project && (

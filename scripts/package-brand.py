@@ -31,10 +31,10 @@ for item in manifest:
                 for n, name in [(180,'apple-touch-icon.png'),(192,'android-chrome-192.png'),(512,'android-chrome-512.png')]:
                     with Image.open(folder / 'png' / f'mark-color-white-{n}.png') as icon:
                         icon.convert('RGB').save(folder / 'icons' / name)
-                (folder / 'icons' / 'site.webmanifest').write_text(json.dumps({'name':'bmpr-editor','short_name':'bmpr','icons':[{'src':f'android-chrome-{n}.png','sizes':f'{n}x{n}','type':'image/png','purpose':'any'} for n in [192,512]],'display':'standalone','background_color':'#ffffff','theme_color':'#111827'},indent=2))
+                (folder / 'icons' / 'site.webmanifest').write_text(json.dumps({'name':'Telario','short_name':'Telario','icons':[{'src':f'android-chrome-{n}.png','sizes':f'{n}x{n}','type':'image/png','purpose':'any'} for n in [192,512]],'display':'standalone','background_color':'#ffffff','theme_color':'#173D4D'},indent=2))
     pdf = folder / 'print' / f"{stem}-{'50' if item['layout']=='mark' else '150'}mm.pdf"
     assert pdf.read_bytes().startswith(b'%PDF')
-archive = root.parent / 'bmpr-editor-logo-kit.zip'
+archive = root.parent / 'telario-logo-kit.zip'
 with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as z:
     for p in sorted(root.rglob('*')):
         if p.is_file():
@@ -42,3 +42,12 @@ with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as z:
 with zipfile.ZipFile(archive) as z:
     assert z.testzip() is None
 print(f'Validated {len(manifest)} masters; {sum(p.is_file() for p in root.rglob("*"))} files; ZIP {archive.stat().st_size} bytes')
+
+# Keep the deployed app in sync with the chosen identity.
+from shutil import copyfile
+public = root.parent.parent / 'public' / 'brand'
+public.mkdir(parents=True, exist_ok=True)
+copyfile(root / 'telario/svg/mark-color-transparent.svg', public / 'mark.svg')
+copyfile(root / 'telario/svg/lockup-color-transparent.svg', public / 'logo.svg')
+for icon in (root / 'telario/icons').iterdir():
+    copyfile(icon, public / icon.name)

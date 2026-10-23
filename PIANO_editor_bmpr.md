@@ -1,6 +1,6 @@
 # Editor web per file `.bmpr` — piano di progetto
 
-Progetto personale / portfolio. Nome provvisorio: **«bmpr-editor»** (da decidere).
+Progetto personale / portfolio. Nome definitivo: **Telario** (scelto il 23/10/2026); nome iniziale: bmpr-editor.
 Base tecnica: `NOTE_bmpr_cantiere_personale.md` (formato del file, esempi JSON).
 
 ## Stato di attuazione — 23/10/2026
@@ -9,7 +9,7 @@ Il piano sotto resta il riferimento originale. È stata implementata una prima v
 
 Sono presenti lettore, viewer, editor base, nuovi controlli/pagine, cronologia, immagini incorporate, export SVG/PNG/Markdown/JSON/Mermaid/draw.io e writer conservativo. Il writer resta sperimentale: manca la prova in Balsamiq. Sono state eseguite verifiche locali in memoria su 281 archivi privati, senza distribuirli né modificarli. Gli esempi nel progetto sono sintetici.
 
-Restano aperti: validazione in Balsamiq e confronto con i suoi PNG, avvio Docker sulla macchina di supporto, maggiore fedeltà dei controlli avanzati, nome definitivo, licenza e eventuale pubblicazione. Nessun sito è stato pubblicato.
+Restano aperti: validazione in Balsamiq e ampliamento del confronto con i suoi PNG, avvio Docker sulla macchina di supporto, maggiore fedeltà dei controlli avanzati, licenza e eventuale pubblicazione. Nessun sito è stato pubblicato.
 
 ## 1. Obiettivo
 

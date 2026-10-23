@@ -1,4 +1,4 @@
-Third-party libraries bundled with bmpr-editor.
+Third-party libraries bundled with telario.
 The application itself has no assigned distribution license yet.
 
 
