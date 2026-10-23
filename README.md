@@ -1,6 +1,6 @@
 # Telario
 
-Identità Telario e kit web/stampa: [galleria locale](assets/logos/index.html), [anteprima](assets/logos/preview.png), [guida ai formati](assets/logos/README.md). Logo scelto: Wireframe, petrolio e arancio. Le proposte precedenti sono archiviate in `assets/archive/`.
+Identità Telario e kit web/stampa: [galleria locale](assets/logos/index.html), [anteprima](assets/logos/preview.png), [guida ai formati](assets/logos/README.md). Logo scelto: Wireframe, petrolio e arancio. Tutte e quattro le [proposte originali](assets/proposte/index.html) e i relativi formati sono conservati e consultabili.
 
 Editor web locale per file `.bmpr`: apre progetti SQLite, visualizza le pagine, modifica i wireframe ed esporta i risultati. React + TypeScript, Vite, sql.js/WebAssembly, SVG e rough.js. Docker serve l'app con Nginx; i documenti vengono elaborati esclusivamente nel browser.
 

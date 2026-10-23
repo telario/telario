@@ -2,7 +2,7 @@
 
 Logo definitivo scelto: **Wireframe**, la seconda proposta. Colori: petrolio **#173D4D** e arancio **#F47847**. Nome: **Telario**.
 
-Aprire `index.html` per vedere le varianti, `preview.png` per l'anteprima e `catalogo.pdf` per il catalogo. Il pacchetto completo è `../telario-logo-kit.zip`. Le proposte iniziali sono conservate separatamente in `../archive/`.
+Aprire `index.html` per vedere le varianti, `preview.png` per l'anteprima e `catalogo.pdf` per il catalogo. Il pacchetto completo è `../telario-logo-kit.zip`. Tutte e quattro le [proposte originali](../proposte/index.html) sono disponibili con i relativi file in `../proposte/`.
 
 ## File disponibili
 

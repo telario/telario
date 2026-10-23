@@ -40,4 +40,8 @@ Il salvataggio rimane quindi sperimentale. La procedura per completare la verifi
 
 ## Migrazione Telario
 
-Progetto e cronologia trasferiti nel repository telario/telario-. Applicati nome Telario e logo Wireframe a interfaccia, favicon e kit assets. Nel nuovo clone: build, 28 test sintetici e 4 test browser superati. Verificati 10 master del logo per dimensioni e trasparenza; 10 PDF senza immagini raster incorporate. Le prove Docker e Balsamiq restano da eseguire. Il test di trascinamento attende ora l'aggiornamento della posizione prima dell'asserzione.
+Progetto e cronologia trasferiti nel repository telario/telario. Applicati nome Telario e logo Wireframe a interfaccia, favicon e kit assets. Nel nuovo clone: build, 28 test sintetici e 4 test browser superati. Verificati 10 master del logo per dimensioni e trasparenza; 10 PDF senza immagini raster incorporate. Le prove Docker e Balsamiq restano da eseguire. Il test di trascinamento attende ora l'aggiornamento della posizione prima dell'asserzione.
+
+## Repository corretto e proposte conservate
+
+Il repository corrente è `telario/telario`, senza trattino finale. Cronologia completa mantenuta. Tutte e quattro le proposte originali e i loro export sono nuovamente accessibili in `assets/proposte/`, con collegamento dalla galleria Telario. Il logo applicato rimane Wireframe.

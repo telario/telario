@@ -8,4 +8,10 @@ Identità scelta: **Wireframe**, petrolio e arancio.
 - [Guida ai formati](logos/README.md)
 - [Kit completo](telario-logo-kit.zip)
 
-Le proposte iniziali sono conservate in `archive/`; il logo Telario è applicato all'app e alle favicon.
+## Tutte le proposte originali
+
+- [Galleria delle quattro proposte](proposte/index.html)
+- [Anteprima comparativa](proposte/preview.png)
+- [Kit originale completo](bmpr-editor-logo-kit.zip)
+
+Monogramma, Wireframe, Pagine e Nodi sono tutti conservati con i formati originali. Il logo Telario scelto è applicato all'app e alle favicon.
