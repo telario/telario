@@ -72,6 +72,8 @@ Limiti da conoscere:
 
 ## Sviluppo e test senza Docker
 
+L'app desktop Electron è un'evolutiva futura, **non ancora implementata**. Obiettivi, perimetro, decisioni e criteri di accettazione sono archiviati nella [roadmap desktop](docs/roadmap/desktop-electron.md), pronta per essere ripresa in un'attività successiva. Oggi l'uso locale è già disponibile con Docker o Node.
+
 Node 22 LTS e npm:
 
 ```sh
