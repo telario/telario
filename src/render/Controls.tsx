@@ -1,6 +1,7 @@
 ﻿import rough from 'roughjs';
 import { createContext, useContext } from 'react';
 import { estimatedWidth, layoutText } from './textLayout';
+import { resolveIcon } from './icons/resolve';
 import {
   arrowGeometry,
   boxOf,
@@ -141,6 +142,17 @@ function ArrowHead({
   );
 }
 function IconShape({ id, color }: { id: string; color: string }) {
+  const icon = resolveIcon(id);
+  if (icon) {
+    const paths = Array.isArray(icon.path) ? icon.path : [icon.path];
+    return (
+      <svg width="24" height="24" viewBox={`0 0 ${icon.width} ${icon.height}`}>
+        {paths.map((path, index) => (
+          <path key={index} d={path} fill={color} />
+        ))}
+      </svg>
+    );
+  }
   if (id === 'file-o' || id === 'file')
     return (
       <path

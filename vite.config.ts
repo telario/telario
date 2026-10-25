@@ -7,6 +7,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
+          icons: ['./src/render/icons/fontawesome-free.json'],
           react: ['react', 'react-dom', 'react-dom/server'],
           sqlite: ['sql.js'],
           sketch: ['roughjs'],

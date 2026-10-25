@@ -41,13 +41,15 @@ Healthcheck: `GET /health` restituisce `ok`. Il filesystem del container è in s
 
 ## Funzionalità
 
+Icone: catalogo locale Font Awesome Free con alias storici; [copertura, licenze e sostituzioni](docs/ICONE.md).
+
 - Apertura dal selettore file o tramite trascinamento; schemi osservati 1.2 e 2.0.
 - Elenco pagine, rinomina, nuove pagine, cestino reversibile.
 - Selezione singola, multipla con Maiusc e rettangolo di selezione; spostamento, otto maniglie di ridimensionamento, pannello proprietà, doppio clic per il testo.
 - Copia/taglia/incolla interni all'editor, duplicazione, eliminazione, allineamento a sinistra/in alto, ordine di sovrapposizione, undo/redo fino a 100 operazioni.
 - Zoom, adattamento pagina, spostamento vista, stile sketch opzionale.
 - Libreria di elementi: riquadro, etichetta, paragrafo, campi, pulsanti, tabella, freccia, icona, finestre e nota.
-- Rendering aggiuntivo di gruppi, pulsanti rotondi, tab, checkbox/radio in gruppo e altri controlli comuni. Immagini PNG/JPEG/GIF/WebP incorporate nel progetto. Icone vettoriali originali essenziali, con segnaposto per quelle sconosciute.
+- Rendering aggiuntivo di gruppi, pulsanti rotondi, tab, checkbox/radio in gruppo e altri controlli comuni. Immagini PNG/JPEG/GIF/WebP incorporate nel progetto. Catalogo vettoriale Font Awesome Free, alias storici e segnaposto per le icone sconosciute.
 - Export della pagina in SVG e PNG; testi di tutte le pagine in Markdown; dati in JSON; diagrammi approssimati in Mermaid e draw.io.
 - Download di una copia `.bmpr`, preservando risorse, tabelle e campi non modificati.
 - Demo sintetica a due pagine, guida e ispezione JSON nell'app.
